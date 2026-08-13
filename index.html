@@ -172,13 +172,13 @@
   <button class="lang-btn" onclick="toggleLang()">
     <span class="pair"><b id="lblPT" class="active">PT</b>/<b id="lblEN">EN</b></span>
   </button>
-  <button onclick="openCVpt()" class="print-btn"><span class="cross"><svg width="13" height="13" fill="currentColor"><use href="#ic-cross"/></svg></span>Currículo PT</button><button onclick="openCVen()" class="print-btn" style="margin-left:.5rem"><span class="cross"><svg width="13" height="13" fill="currentColor"><use href="#ic-cross"/></svg></span>Résumé EN</button>
+  <button onclick="openCVpt()" class="print-btn"><span class="cross"><svg width="13" height="13" fill="currentColor"><use href="#ic-cross"/></svg></span>Currículo PT</button><button onclick="openCVen()" class="print-btn" style="margin-left:.5rem"><span class="cross"><svg width="13" height="13" fill="currentColor"><use href="#ic-cross"/></svg></span>Curriculum EN</button>
 </div>
 
 <div class="sheet">
   <header class="head">
     <div class="reveal in">
-      <p class="eyebrow" data-pt="Currículo — Tomar, Portugal" data-en="Résumé — Tomar, Portugal">Currículo — Tomar, Portugal</p>
+      <p class="eyebrow" data-pt="Currículo — Tomar, Portugal" data-en="Curriculum — Tomar, Portugal">Currículo — Tomar, Portugal</p>
       <h1 class="name">Pedro <span class="surname">Brito</span></h1>
       <p class="role" data-pt='Full-Stack Developer <span>— Engenharia Informática, IPT</span>' data-en='Full-Stack Developer <span>— Computer Engineering, IPT</span>'>Full-Stack Developer <span>— Engenharia Informática, IPT</span></p>
       <p class="tagline" data-pt="Estudante finalista de Engenharia Informática com experiência prática em desenvolvimento full-stack, sistemas IoT e análise de dados. Foco em React, TypeScript e Node.js." data-en="Final-year Computer Engineering student with hands-on experience in full-stack development, IoT systems, and data analysis. Focused on React, TypeScript, and Node.js.">Estudante finalista de Engenharia Informática com experiência prática em desenvolvimento full-stack, sistemas IoT e análise de dados. Foco em React, TypeScript e Node.js.</p>
@@ -291,7 +291,7 @@ function applyLang(l){
   document.documentElement.lang=l==='pt'?'pt-PT':'en';
   document.getElementById('lblPT').classList.toggle('active',l==='pt');
   document.getElementById('lblEN').classList.toggle('active',l==='en');
-  document.getElementById('printLabel').textContent=l==='pt'?'Abrir Currículo':'Open Résumé';
+  document.getElementById('printLabel').textContent=l==='pt'?'Abrir Currículo':'Open Curriculum';
   lang=l;
 }
 function openCVpt(){
